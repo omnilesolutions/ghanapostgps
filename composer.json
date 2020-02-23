@@ -1,0 +1,32 @@
+{
+    "name": "brightantwiboasiako/ghanapostgps",
+    "description": "PHP package for connecting with GhanaPostGPS",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0@dev",
+        "phpseclib/phpseclib": "^2.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "omnilesolutions",
+            "email": "bright@omnile.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "^9.1@dev",
+        "mockery/mockery": "^1.3@dev",
+        "fzaninotto/faker": "^1.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "GhanaPostGPS\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "prefer-stable": true
+}
