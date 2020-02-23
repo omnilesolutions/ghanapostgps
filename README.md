@@ -1,7 +1,7 @@
 # GhanaPostGPS
 PHP package for GhanaPostGPS
  
-This package is connects with the GhanaPostGPS to look for digital addresses
+This package connects with the GhanaPostGPS to look for digital addresses
 in Ghana.
 
 ## Installation
