@@ -15,7 +15,7 @@ class GhanaPostGPSTest extends BaseTest {
 
     public function test_it_can_get_location_for_gps(){
 
-        $asaaseUser = 'YOUR-ASAASE-USER-ID';
+        $asaaseUser = 'VGhpcyBJcyBUaGUgQW5kcm9pZCBVc2Vy';
         $deviceId = 'YOUR-DEVICE-ID';
         $gpsName = 'GA-585-7449';
         $aesKey = 'YOUR-AES-KEY';
@@ -39,7 +39,7 @@ class GhanaPostGPSTest extends BaseTest {
 
     public function test_it_can_get_gps_for_location(){
 
-        $asaaseUser = 'YOUR-ASAASE-USER-ID';
+        $asaaseUser = 'VGhpcyBJcyBUaGUgQW5kcm9pZCBVc2Vy';
         $deviceId = 'YOUR-DEVICE-ID';
         $gpsName = 'GA-585-7449';
         $aesKey = 'YOUR-AES-KEY';
