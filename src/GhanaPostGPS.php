@@ -112,6 +112,7 @@ class GhanaPostGPS
     /**
      * @param $payload
      * @return mixed
+     * @throws \Exception
      */
     private function makeDataRequest($payload){
         $encryptedPayload = $this->aes->encrypt(
@@ -121,6 +122,8 @@ class GhanaPostGPS
         $response = $this->httpClient->post('', [
             'DataRequest' => $encryptedPayload
         ], ['DeviceID' => $this->deviceId]);
+
+        $this->checkResponse($response);
 
         return json_decode($this->aes->decrypt($response), true)['Table'][0];
     }
@@ -138,10 +141,21 @@ class GhanaPostGPS
             'ApiData' => $this->rsa->encrypt($payload)
         ], [ 'AsaaseUser' => $this->asaaseUserId ]);
 
+        $this->checkResponse($response);
+
         $decrypted = $this->aes->decrypt($response);
         $dataUrl = explode('||', $decrypted)[1];
 
         $this->httpClient = new HttpClient($this->asaaseUserId, $dataUrl);
+    }
+
+    /**
+     * @param $response
+     * @throws \Exception
+     */
+    private function checkResponse($response){
+        if(strlen($response) === 0)
+            throw new \Exception('Invalid Response from API. Check credentials / request');
     }
 
     /**
