@@ -1,0 +1,32 @@
+{
+  "name": "ghanapostgps",
+  "version": "1.0.0",
+  "description": "GhanaPostGPS",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brightantwiboasiako/ghanapostgps.git"
+  },
+  "keywords": [
+    "GhanaPostGPS",
+    "Ghana",
+    "PostCodes"
+  ],
+  "author": "Bright Antwi Boasiako <bright@omnile.com> (omnile.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brightantwiboasiako/ghanapostgps/issues"
+  },
+  "homepage": "https://github.com/brightantwiboasiako/ghanapostgps#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-phpunit": "^0.26.0"
+  }
+}
