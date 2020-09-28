@@ -15,7 +15,7 @@ composer require omnilesolutions/ghanapostgps
 Before connecting to GhanaPostGPS, you'll need the following:
 1. AsaaseUser ID
     This is given to you during on-boarding with the GhanaPostGPS team 
-    and can be found other your profile from the
+    and can be found under your profile from the
     [GPSAdmin Portal](https://gpsadmin.ghanapostgps.com)
 2. DeviceID
     You'll need to create a device on the [GPSAdmin Portal](https://gpsadmin.ghanapostgps.com)
