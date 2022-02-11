@@ -2,8 +2,9 @@
     "name": "omnilesolutions/ghanapostgps",
     "description": "PHP package for connecting with GhanaPostGPS",
     "require": {
-        "guzzlehttp/guzzle": "^6.5",
-        "phpseclib/phpseclib": "^2.0"
+        "guzzlehttp/guzzle": "^7.4",
+        "phpseclib/phpseclib": "^2.0",
+        "ext-json": "*"
     },
     "license": "MIT",
     "authors": [
@@ -14,7 +15,7 @@
     ],
     "minimum-stability": "dev",
     "require-dev": {
-        "phpunit/phpunit": "^7.5"
+        "phpunit/phpunit": "^9.5"
     },
     "autoload": {
         "psr-4": {
